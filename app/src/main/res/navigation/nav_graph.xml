@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.easymeat.fragments.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_buyerFragment"
+            app:destination="@id/buyerFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_sellerFragment"
+            app:destination="@id/sellerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerFragment"
+        android:name="com.example.easymeat.fragments.BuyerFragment"
+        android:label="fragment_seller"
+        tools:layout="@layout/fragment_seller" >
+        <action
+            android:id="@+id/action_buyerFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+        <action
+            android:id="@+id/action_buyerFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellerFragment"
+        android:name="com.example.easymeat.fragments.SellerFragment"
+        android:label="SellerFragment" >
+        <action
+            android:id="@+id/action_sellerFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_sellerFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+        <action
+            android:id="@+id/action_sellerFragment_to_orderListFragment"
+            app:destination="@id/orderListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.easymeat.fragments.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" >
+        <action
+            android:id="@+id/action_productListFragment_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+        <action
+            android:id="@+id/action_productListFragment_to_qualifyFragment"
+            app:destination="@id/qualifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.easymeat.fragments.CartFragment"
+        android:label="fragment_car"
+        tools:layout="@layout/fragment_car" >
+        <action
+            android:id="@+id/action_cartFragment_to_makeOrderFragment"
+            app:destination="@id/makeOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.easymeat.fragments.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.example.easymeat.fragments.EditProductFragment"
+        android:label="fragment_edit_product"
+        tools:layout="@layout/fragment_edit_product" />
+    <fragment
+        android:id="@+id/makeOrderFragment"
+        android:name="com.example.easymeat.fragments.MakeOrderFragment"
+        android:label="fragment_make_order"
+        tools:layout="@layout/fragment_make_order" />
+    <fragment
+        android:id="@+id/orderListFragment"
+        android:name="com.example.easymeat.fragments.OrderListFragment"
+        android:label="fragment_order_list"
+        tools:layout="@layout/fragment_order_list" />
+    <fragment
+        android:id="@+id/qualifyFragment"
+        android:name="com.example.easymeat.fragments.QualifyProductFragment"
+        android:label="fragment_qualify"
+        tools:layout="@layout/fragment_qualify_product" />
+</navigation>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainMenuFragment"
+    android:background="@drawable/background_main_menu">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:padding="20dp"
+            android:id="@+id/imageViewIconApp"
+            android:src="@drawable/easymeat"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnBuyer"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Comprador"
+        android:drawableTop="@drawable/ic_baseline_person_24"
+        android:background="@drawable/background_buyer_button"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage"
+        app:layout_constraintEnd_toStartOf="@id/btnSeller"/>
+
+    <Button
+        android:id="@+id/btnSeller"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Vendedor"
+        android:drawableTop="@drawable/ic_baseline_person_24"
+        android:background="@drawable/background_seller_button"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@id/btnBuyer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Salir"
+        android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+        android:background="#3C3C3C"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuyer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

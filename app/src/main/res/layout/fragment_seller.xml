@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BuyerFragment">
+
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Confirmar/Rechazar pedidos"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/background_options_seller"
+        android:drawableLeft="@drawable/ic_baseline_shop_24"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Agregar productos"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/background_options_seller"
+        android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmOrder" />
+
+    <Button
+        android:id="@+id/btnEditProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Editar productos"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/background_options_seller"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddProduct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

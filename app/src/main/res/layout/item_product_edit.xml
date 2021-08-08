@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#F6F6F6"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/textViewMeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de carne: "
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewCut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de corte: "
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMeat" />
+
+
+            <TextView
+                android:id="@+id/textViewMyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio: "
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewCut" />
+
+
+            <TextView
+                android:id="@+id/textViewMyQualify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calificación: "
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewMyPrice" />
+
+
+
+            <TextView
+                android:id="@+id/textViewTypeMeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARNE"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textViewMeat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTypeCut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CORTE"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textViewCut"
+                app:layout_constraintTop_toBottomOf="@id/textViewTypeMeat" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textViewMyPrice"
+                app:layout_constraintTop_toBottomOf="@id/textViewCut" />
+
+
+            <TextView
+                android:id="@+id/textViewQualify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALIFICACIÓN"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textViewMyQualify"
+                app:layout_constraintTop_toBottomOf="@id/textViewPrice" />
+
+
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_button_items"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewQualify" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

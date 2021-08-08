@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20347886038",
+    "project_id": "easymeat-45f47",
+    "storage_bucket": "easymeat-45f47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20347886038:android:a8903c9754a0babb44ac77",
+        "android_client_info": {
+          "package_name": "com.example.easymeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20347886038-3f6jm93ukhgthhlgkt03himc5errfi19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw5Ls46DH4pRrVMxXKZBu9-ZtXdowlrhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20347886038-3f6jm93ukhgthhlgkt03himc5errfi19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
